@@ -1,0 +1,129 @@
+body{
+	
+	margin:0;
+}
+html,body{
+	height: 100%;
+
+}
+a{
+	text-decoration: none;
+}
+#sence{
+	width: 100%;
+	height:100%;
+	background: url(../1.jpg)  center center;
+	background-size: cover;/* 改变图片的宽高 */
+	 position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.kashi{
+	
+	width: 174px;
+	height: 43px;
+	z-index: 3;
+	position: absolute;
+	top:45%;
+	left: 45%;
+	
+}
+
+.kashi p{
+	font-size: 25px;
+	margin-top: 7px;
+	text-align: center;
+	position: absolute;
+	top:0px;
+	left: 40px;
+	color: #fff;
+	line-height:25px;
+}
+.jx{
+	width: 174px;
+	height: 43px;
+	position: absolute;
+	bottom:10%;
+	left: 10%;
+	z-index: 3;
+}
+.jx a{
+	font-size: 25px;
+	margin-top: 10px;
+	text-align: center;
+	position: absolute;
+	top:-5px;
+	left: 40px;
+	color: #fff;
+}
+.zt{
+	width: 174px;
+	height: 43px;
+	position: absolute;
+	bottom:10%;
+	right: 10%;
+	z-index: 3;
+}
+.zt a{
+	font-size: 25px;
+	margin-top: 10px;
+	text-align: center;
+	position: absolute;
+	top:-5px;
+	left: 40px;
+	color: #fff;
+}
+.fs{
+	width: 300px;
+	height:40px;
+	
+	position: absolute;
+	top:20px;
+	left: 30px;
+	z-index: 3;
+}
+.fenshu{
+	line-height: 40px;
+	font-size: 25px;
+	color: #fff;
+}
+.score{
+	width: 270px;
+	height: 40px;
+	float: left;
+	position: absolute;
+	top:0;
+	left: 60px;
+	background: #fff;
+	border:2px solid #ccc;
+	font-size: 25px;
+	line-height: 40px;
+	text-align: center;
+}
+.sm{
+	width: 300px;
+	height:40px;
+	
+	position: absolute;
+	top:20px;
+	right: 100px;
+	z-index: 3;
+}
+.shengming{
+	line-height: 40px;
+	font-size: 25px;
+	color: #fff;
+}
+.leve{
+	width: 270px;
+	height: 40px;
+	float: left;
+	position: absolute;
+	top:0;
+	left: 60px;
+	background: #fff;
+	border:2px solid #ccc;
+	font-size: 25px;
+	line-height: 40px;
+	text-align: center;
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>游戏</title>
+	<link rel="stylesheet" href="./css/index.css">
+<script src="./js/index.js"></script>
+
+</head>
+<body>
+	<div id="sence"></div>
+	<div class="kashi">
+		<a href=""></a>
+			<img src="35.png" alt=""><p>开始游戏</p></div>
+	<div class="jx">
+	<img src="36.png" alt="">
+	<a href="">继续游戏</a>
+		</div>
+	<div class="zt"><img src="36.png" alt=""><a href="">暂停游戏</a></div>
+	<div class="fs">
+		<span class="fenshu">分数：</span>
+		<div class="score">0</div>
+	</div>
+	<div class="sm">
+		<span class="shengming">生命：</span>
+		<div class="leve">26</div>
+	</div>
+</body>
+<script>
+	var sence=document.getElementById('sence');
+	var kashi=document.getElementsByClassName('kashi')[0];
+	var jx=document.getElementsByClassName('jx')[0];
+	var zt=document.getElementsByClassName('zt')[0];
+	var game=new game(sence);
+	var flag=true;
+	kashi.onclick=function(){ 
+		
+		game.play();
+		game.key();
+		kashi.style.display="none";
+		zt.style.display="block";
+	}
+	jx.onclick=function(){
+  if (flag) {
+    game.play();
+    game.key()
+    flag=false;
+  };
+  jx.style.display="none"
+}
+zt.onclick=function(){
+  jx.style.display="block"
+  game.Stop()
+  flag=true;
+}
+	</script>
+</html>
